@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FitZone Fitness & Wellness Center</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(120deg, #fdfbfb, #ebedee);
+  }
+  header {
+    background: linear-gradient(135deg,#ff416c,#ff4b2b);
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  header .logo {
+    width: 60px;
+    height: auto;
+    margin-right: 15px;
+  }
+  header h1 {
+    margin: 0;
+    font-size: 1.8rem;
+  }
+  header p {
+    margin: 0;
+    font-size: 0.9rem;
+  }
+  nav a {
+    color: white;
+    margin-left: 15px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  nav a:hover {
+    text-decoration: underline;
+  }
+  .container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 15px;
+  }
+  section {
+    background: white;
+    padding: 30px;
+    margin-top: 30px;
+    border-radius: 18px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    scroll-margin-top: 130px;
+    animation: fadeUp 1s ease;
+  }
+  h2 {
+    margin-top: 0;
+  }
+  .card {
+    transition: transform 0.4s, box-shadow 0.4s;
+  }
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 18px 35px rgba(0,0,0,0.25);
+  }
+  .service-img, .gallery-img, .trainer-img {
+    width: 100%;
+    object-fit: cover;
+    transition: transform 0.5s, box-shadow 0.5s;
+  }
+  .service-img {
+    height: 200px;
+    border-radius: 15px 15px 0 0;
+  }
+  .service-img:hover, .gallery-img:hover {
+    transform: scale(1.08);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+  }
+  .trainer-img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 4px solid #ff416c;
+  }
+  .trainer-img:hover {
+    transform: scale(1.1) rotate(2deg);
+    box-shadow: 0 0 20px rgba(255,65,108,0.8);
+  }
+  .gallery-img {
+    height: 220px;
+    border-radius: 15px;
+  }
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -10px;
+  }
+  .col {
+    flex: 1;
+    min-width: 250px;
+    padding: 10px;
+    text-align: center;
+  }
+  .btn-danger {
+    padding: 10px 20px;
+    background: linear-gradient(to right,#ff416c,#ff4b2b);
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+  .btn-danger:hover {
+    opacity: 0.9;
+  }
+  .video-container {
+    max-width: 600px;
+    margin: 20px auto;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+   }
+   .video-container video {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  audio {
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+  }
+  footer {
+    background: #232526;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+  }
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(40px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .mb-2 { margin-bottom: 10px; }
+  .mb-3 { margin-bottom: 15px; }
+  .mt-2 { margin-top: 10px; }
+  .mt-3 { margin-top: 15px; }
+  .text-center { text-align: center; }
+  .d-flex { display: flex; }
+  .justify-content-center { justify-content: center; }
+  .align-items-center { align-items: center; }
+  </style>
+  </head>
+ <body>
+  <header>
+    <div class="d-flex align-items-center">
+      <img src="https://images-platform.99static.com/e7uf1H9JgXe1C7oGvoRAdR7fPVU=/0x0:1200x1200/500x500/top/smart/99designs-contests-attachments/82/82740/attachment_82740976" class="logo" alt="FitZone Logo">
+      <div>
+        <h1>FitZone Wellness Center</h1>
+        <p>Build Strength • Improve Health • Gain Confidence</p>
+      </div>
+    </div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#trainers">Trainers</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+  <div class="container">
+    <section id="about">
+      <h2 style="color:#ff416c;">About Us</h2>
+      <p><b>FitZone Wellness Center</b> is a modern fitness and wellness hub that focuses on improving physical strength, flexibility and mental wellness.
+        
+We provide professional gym training, yoga, cardio and zumba programs in a safe and hygienic environment.</p>
+    </section>
+    
+    <section id="services">
+      <h2 style="color:#007bff;">Our Services</h2>
+        <div class="row">
+          <div class="col mb-3">
+            <div class="card">
+              <img src="https://urec.uark.edu/_resources/images/fitness_wellness/personal-trainer-1-compressor.jpg" class="service-img" alt="Gym Training">
+              <div style="padding:10px;">
+                <h5>Gym</h5>
+                <p>Improves muscle strength, endurance and body shape.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-3">
+            <div class="card">
+              <img src="https://3989ac5bcbe1edfc864a-0a7f10f87519dba22d2dbc6233a731e5.ssl.cf2.rackcdn.com/honoryoga/Princeton101218159-2.jpg" class="service-img" alt="Yoga">
+              <div style="padding:10px;">
+                <h5>Yoga</h5>
+                <p>Enhances flexibility, breathing and mental peace.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-3">
+            <div class="card">
+              <img src="https://hsa-cayman.imgix.net/images/hsa-cardiology-team-testing.JPG?auto=format&crop=focalpoint&domain=hsa-cayman.imgix.net&fit=crop&fp-x=0.4983&fp-y=0.298&h=1152&ixlib=php-3.3.1&q=30&usm=20&w=1728" class="service-img" alt="Cardio">
+              <div style="padding:10px;">
+                <h5>Cardio</h5>
+                <p>Boosts heart health, stamina and fat loss.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-3">
+            <div class="card">
+              <img src="https://mgym.in/public/assets/img/slider/1-zumba.jpg" class="service-img" alt="Zumba">
+              <div style="padding:10px;">
+                <h5>Zumba</h5>
+                <p>High-energy dance workout for calorie burning.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="trainers">
+        <h2 style="color:#ffc107;">Expert Trainers</h2>
+        <div class="row">
+          <div class="col">
+            <img src="https://thumbs.dreamstime.com/b/proud-fitness-trainer-his-gym-confident-exercise-coach-gym-indian-fit-man-arms-crossed-bodybuilding-creates-proud-263412438.jpg" class="trainer-img" alt="Trainer Alexa">
+            <h5 class="mt-2">Alexa</h5>
+            <p>Certified Gym Trainer</p>
+          </div>
+          <div class="col">
+            <img src="https://thumbs.dreamstime.com/b/young-woman-yoga-trainer-young-woman-yoga-practitioner-trainer-indoor-various-poses-asanas-107054715.jpg" class="trainer-img" alt="Trainer Riya">
+            <h5 class="mt-2">Riya</h5>
+            <p>Professional Yoga Trainer</p>
+          </div>
+          <div class="col">
+            <img src="https://content.presspage.com/uploads/2110/1920_aakriti-gupta-md-cedars-sinai.jpeg?16688" class="trainer-img" alt="Trainer Dr.Neha">
+            <h5 class="mt-2">Dr.Neha</h5>
+            <p>Cardio Specialist</p>
+          </div>
+        </div>
+      </section>
+      <section id="gallery">
+        <h2 style="color:#17a2b8;">Gallery</h2>
+        <div class="row">
+          <div class="col mb-3"><img src="https://hammersgym.com.au/wp-content/uploads/2022/09/1.jpeg" class="gallery-img" alt="Gallery Image 1"></div>
+          <div class="col mb-3"><img src="https://kalasadha.in/fileadmin/templates/kalasadha/images/gallery/Yoga/yogaday-2020.JPG" class="gallery-img" alt="Gallery Image 2"></div>
+          <div class="col mb-3"><img src="https://www.riminiwellness.com/Data/Riminiwellness/Eventi/Cross%20Cardio/New/217061/image-thumb__217061__ws_event_gallery/Cross%20cardio%20(4).jpg" class="gallery-img" alt="Gallery Image 3"></div>
+        </div>
+        <h5>Motivational Audio</h5>
+        <audio controls>
+          <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-13.mp3" type="audio/mpeg">
+          Your browser does not support audio</audio>
+          <h5 class="mt-3">Workout Demo Video</h5>
+          <div class="video-container">
+            <video width="640" controls>
+              <source  src="Demo.mp4" type="video/mp4">
+            </video>
+          </div>
+        </section>
+        <section id="contact">
+          <h2>Register</h2>
+          <form id="registerForm">
+            <input type="text" class="mb-2" placeholder="Name" required style="width:100%; padding:10px;">
+            <input type="number" id="mobile" class="mb-2" placeholder="Mobile Number" required style="width:100%; padding:10px;">
+            <textarea class="mb-2" placeholder="Fitness Goal" style="width:100%; padding:10px;"></textarea>
+            <button class="btn-danger">Register</button>
+          </form>
+        </section>
+      </div>
+      <footer>
+        <p>© 2025 FitZone Wellness Center</p>
+        <p>fitzone.wellness@gmail.com</p>
+      </footer>
+      <script>
+      document.getElementById("registerForm").addEventListener("submit", function(e)
+      {
+        e.preventDefault();
+        let mobile = document.getElementById("mobile").value;
+        if(mobile.length != 10)
+        {
+          alert("Enter valid 10-digit mobile number");
+          return;
+        }
+        let otp = Math.floor(1000 + Math.random() * 9000);
+        let userOtp = prompt("Enter OTP (Demo): " + otp);
+        if(userOtp == otp)
+        {
+          alert("Registration Successful ✅");
+          this.reset();
+        } else {
+          alert("Wrong OTP ❌");
+          }
+      });
+    </script>
+  </body>
+</html>
